@@ -3,8 +3,8 @@ dotfiles
 
 ## init
 
-```sh
-$ git clone https://github.com/Ntomoya/dotfiles
+``` bash
+$ git clone https://github.com/Ntomoya/dotfiles.git
 $ cd dotfiles/bin
 $ ./setup.sh
 ```
