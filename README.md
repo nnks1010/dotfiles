@@ -6,6 +6,6 @@ dotfiles
 ``` bash
 $ git clone https://github.com/Ntomoya/dotfiles.git
 $ cd dotfiles/bin
-$ ./setup.sh
+$ chmod +x setup.sh && ./setup.sh
 ```
 
