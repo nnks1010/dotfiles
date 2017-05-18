@@ -1,8 +1,8 @@
 #!/bin/bash
 
-DOT_FILES=(.vimrc)
+DOT_FILES=(.vimrc .config)
 
 for file in ${DOT_FILES[@]}
 do
-  ln -s $HOME/dotfiles/$file $HOME/$file
+  ln -s $HOME/.dotfiles/$file $HOME/$file
 done
