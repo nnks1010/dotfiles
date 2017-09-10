@@ -1,0 +1,10 @@
+language: c
+
+matrix:
+  include:
+    - os: osx
+    - os: linux
+      sudo: required
+
+script:
+  - ./bin/test.sh
