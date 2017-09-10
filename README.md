@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nnks1010/dotfiles.svg?branch=travis)](https://travis-ci.org/nnks1010/dotfiles)
+
 dotfiles
 ========
 
