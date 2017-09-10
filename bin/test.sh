@@ -5,7 +5,9 @@ set -eu
 if uname | fgrep -i Darwin > /dev/null 2>&1; then
     echo "install brew"
     set -x
-    rm -rf /usr/local/Homebrew
+    if ! [ -z $TRAVIS ]; then
+        rm -rf /usr/local/Homebrew
+    fi
     if ! type -p brew > /dev/null 2>&1; then
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
