@@ -29,3 +29,14 @@ else
     sudo apt-get install git -y
     set +x
 fi
+
+echo "install repository"
+set -x
+
+cd ~/
+if [ ! -d dotfiles ]; then
+    git clone https://github.com/nnks1010/dotfiles.git
+fi
+cd dotfiles
+
+set +x
