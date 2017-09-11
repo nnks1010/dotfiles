@@ -13,9 +13,19 @@ if uname | fgrep -i Darwin > /dev/null 2>&1; then
     fi
     brew update
     set +x
+
+    echo "install git"
+    set -x
+    brew install git
+    set +x
 else
     echo "update apt"
     set -x
     sudo apt-get update -y
+    set +x
+
+    echo "install git"
+    set -x
+    sudo apt-get install git -y
     set +x
 fi
