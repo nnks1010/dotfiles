@@ -43,7 +43,7 @@ set +x
 
 echo "install package"
 if uname | fgrep -i Darwin > /dev/null 2>&1; then
-    bash ./bin/install/script/brew.sh
+    bash ./bin/install/brew.sh
 else
-    bash ./bin/install/script/apt.sh
+    bash ./bin/install/apt.sh
 fi
