@@ -54,6 +54,8 @@ echo "install anyenv"
 set -x
 
 git clone https://github.com/riywo/anyenv ~/.anyenv
+ln -sf $HOME/dotfiles/etc/.bashrc $HOME/.bashrc
+source $HOME/.bashrc
 
 set +x
 
