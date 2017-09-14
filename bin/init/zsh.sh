@@ -9,7 +9,7 @@ if uname | fgrep -i Darwin > /dev/null 2>&1; then
     else
         sudo echo "/usr/local/bin/zsh" >> etc/shells
         ln -s .zshrc $HOME/dotfiles/etc/.zshrc
-        chsh -s /usr/local/bin/zsh
+        sudo chsh -s /usr/local/bin/zsh
         exec -l $SHELL
     fi
 else
@@ -19,7 +19,7 @@ else
     else
         sudo echo "/usr/bin/zsh" >> etc/shells
         ln -s .zshrc $HOME/dotfiles/etc/.zshrc
-        chsh -s /usr/bin/zsh
+        sudo chsh -s /usr/bin/zsh
         exec -l $SHELL
     fi
 fi
