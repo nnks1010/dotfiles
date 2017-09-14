@@ -59,9 +59,4 @@ set +x
 
 echo "init zsh"
 
-if ! type -p /bin/zsh > /dev/null 2>&1; then
-    echo "Error: not found zshell"
-    exit 1
-else
-    bash ./bin/init/zsh.sh
-fi
+bash ./bin/init/zsh.sh
