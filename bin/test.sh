@@ -42,8 +42,9 @@ cd dotfiles
 set +x
 
 echo "install package"
+
 if uname | fgrep -i Darwin > /dev/null 2>&1; then
-    bash ./bin/install/brew.sh
+    bash ./bin/init/brew.sh
 else
-    bash ./bin/install/apt.sh
+    bash ./bin/init/apt.sh
 fi
