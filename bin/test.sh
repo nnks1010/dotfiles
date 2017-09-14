@@ -51,3 +51,19 @@ if uname | fgrep -i Darwin > /dev/null 2>&1; then
 else
     bash ./bin/init/apt.sh
 fi
+
+echo "install anyenv"
+set -x
+
+git clone https://github.com/riywo/anyenv ~/.anyenv
+
+set +x
+
+echo "init zsh"
+
+if ! type -p /bin/zsh > /dev/null 2>&1; then
+    echo "Error: not found zshell"
+    exit 1
+else
+    bash ./bin/init/zsh.sh
+fi
