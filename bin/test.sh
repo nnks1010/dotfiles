@@ -24,7 +24,7 @@ else
     echo "update apt"
     set -x
     sudo apt-get update -y
-    sudo apt-get upgrade -y
+    sudo apt-get dist-upgrade -y
     set +x
 
     echo "install git"
