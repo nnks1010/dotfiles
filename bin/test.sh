@@ -12,6 +12,8 @@ if uname | fgrep -i Darwin > /dev/null 2>&1; then
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
     brew update
+    brew upgrade --all
+    brew doctor
     set +x
 
     echo "install git"
@@ -22,6 +24,7 @@ else
     echo "update apt"
     set -x
     sudo apt-get update -y
+    sudo apt-get upgrade -y
     set +x
 
     echo "install git"
