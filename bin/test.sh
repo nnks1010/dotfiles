@@ -57,6 +57,23 @@ set -x
 git clone https://github.com/riywo/anyenv ~/.anyenv
 ln -sf $HOME/dotfiles/etc/.bashrc $HOME/.bashrc
 source $HOME/.bashrc
+anyenv install rbenv
+anyenv install pyenv
+source $HOME/.bashrc
+rbenv install 2.4.1
+pyenv install 3.6.0
+pyenv install 2.7.13
+
+set +u
+rbenv global 2.4.1
+pyenv global 3.6.0
+pyenv shell  3.6.0
+set -u
+
+ruby --version
+python --version
+python3 --version
+python2 --version
 
 set +x
 
