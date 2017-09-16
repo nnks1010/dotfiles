@@ -66,8 +66,7 @@ pyenv install 2.7.13
 
 set +u
 rbenv global 2.4.1
-pyenv global 3.6.0
-pyenv shell  3.6.0
+pyenv global 3.6.0 2.7.13
 set -u
 
 ruby --version
