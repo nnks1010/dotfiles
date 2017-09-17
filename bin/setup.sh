@@ -1,8 +1,12 @@
 #!/bin/bash
 
-DOT_FILES=(.vimrc .config)
+cd etc/
 
-for file in ${DOT_FILES[@]}
+PWD=`pwd`
+
+for file in .??*
 do
-  ln -s $HOME/.dotfiles/$file $HOME/$file
+    ln -sf $PWD/$file $file
 done
+
+cd ../

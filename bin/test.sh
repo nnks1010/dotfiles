@@ -74,3 +74,7 @@ set +x
 echo "init zsh"
 
 bash ./bin/init/zsh.sh
+
+echo "setup"
+
+bash .bin/setup.sh
