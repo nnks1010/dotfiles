@@ -6,8 +6,8 @@ PWD=`pwd`
 for file in .??*
 do
     if [ -d $file ] && [ -e $HOME/$file ]; then
-        echo $file
-        rm -rf $HOME/$file
+        echo "directory already exists"
+        mv $HOME/$file $HOME/${file}.swp
     fi
     ln -sf $PWD/$file $HOME/$file
 done
