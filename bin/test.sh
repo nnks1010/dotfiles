@@ -77,4 +77,4 @@ bash ./bin/init/zsh.sh
 
 echo "setup"
 
-bash .bin/setup.sh
+bash ./bin/setup.sh
