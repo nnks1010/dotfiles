@@ -18,6 +18,7 @@ cd ../
 set +x
 
 echo "update package"
+set -x
 
 if uname | fgrep -i Darwin > /dev/null 2>&1; then
     brew update
@@ -31,5 +32,11 @@ else
     sudo apt autoclean
 fi
 
+set +x
+
 echo "update anyenv"
+set -x
+
 anyenv update
+
+set +x
