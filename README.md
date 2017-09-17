@@ -6,8 +6,5 @@ dotfiles
 ## init
 
 ``` bash
-$ git clone https://github.com/Ntomoya/dotfiles.git ~/dotfiles
-$ cd ~/dotfiles/bin
-$ chmod +x setup.sh && ./setup.sh
+$ curl -L https://raw.github.com/nnks1010/dotfiles/master/bin/install.sh | bash
 ```
-
