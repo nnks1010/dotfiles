@@ -7,4 +7,4 @@ matrix:
       sudo: required
 
 script:
-  - curl -L https://raw.github.com/pine/dotfiles/v2/bin/test.sh | bash
+  - curl -L https://raw.github.com/nnks1010/dotfiles/master/bin/test.sh | bash
