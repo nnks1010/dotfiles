@@ -69,6 +69,9 @@ rbenv global 2.4.1
 pyenv global 3.6.0 2.7.13
 set -u
 
+mkdir -p $(anyenv root)/plugins
+git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
+
 set +x
 
 echo "init zsh"
@@ -79,4 +82,3 @@ echo "setup"
 
 bash ./bin/setup.sh
 
-ls -al $HOME
