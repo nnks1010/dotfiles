@@ -1,4 +1,4 @@
-language: c
+language: bash
 
 matrix:
   include:
@@ -7,4 +7,4 @@ matrix:
       sudo: required
 
 script:
-  - ./bin/test.sh
+  - curl -L https://raw.github.com/pine/dotfiles/v2/bin/test.sh | bash
