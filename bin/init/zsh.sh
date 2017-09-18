@@ -7,7 +7,7 @@ if uname | fgrep -i Darwin > /dev/null 2>&1; then
         echo "Error: not found zshell"
         exit 1
     else
-        sudo echo "/usr/local/bin/zsh" >> etc/shells
+        sudo echo "/usr/local/bin/zsh" >> /etc/shells
         sudo chsh -s /usr/local/bin/zsh
     fi
 else
@@ -15,7 +15,7 @@ else
         echo "Error: not found zshell"
         exit 1
     else
-        sudo echo "/usr/bin/zsh" >> etc/shells
+        sudo echo "/usr/bin/zsh" >> /etc/shells
         sudo chsh -s /usr/bin/zsh
     fi
 fi
