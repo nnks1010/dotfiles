@@ -78,6 +78,15 @@ echo "init zsh"
 
 bash ./bin/init/zsh.sh
 
+echo "init neovim"
+set -x
+
+pip2 install neovim
+pip3 install neovim
+gem install neovim
+
+set +x
+
 echo "setup"
 
 bash ./bin/setup.sh
