@@ -2,6 +2,7 @@
 
 set -x
 
+sudo apt install bzip2 -y
 sudo apt install sl -y
 sudo apt install zsh -y
 
