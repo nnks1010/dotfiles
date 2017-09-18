@@ -1,3 +1,8 @@
+" vimファイル
+
+let $VIM_CONF_PATH = $HOME . '/.config/nvim'
+
+source $VIM_CONF_PATH/dein.vim
 
 " vimのvi互換モードを無効にする
 if &compatible
@@ -94,12 +99,6 @@ set incsearch
 
 " 検索結果のハイライトを消す
 nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
-
-" vimファイル
-
-let $VIM_CONF_PATH = $HOME . '/.config/nvim'
-
-source $VIM_CONF_PATH/dein.vim
 
 " シンタクッスハイライトを有効にする
 syntax enable
