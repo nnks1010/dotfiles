@@ -2,8 +2,12 @@
 
 set -x
 
+sudo apt install build-essential -y
 sudo apt install bzip2 -y
+sudo apt install libssl-dev -y
+sudo apt install libreadline-dev -y
 sudo apt install sl -y
+sudo apt install zlib1g-dev -y
 sudo apt install zsh -y
 
 # install neovim
