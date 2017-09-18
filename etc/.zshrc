@@ -56,5 +56,5 @@ path=(
 # anyenv
 if [[ -d "$HOME/.anyenv" ]] then
 	path=($HOME/.anyenv/bin $path)
-	eval "$(anyenv init -)"
+	eval "$(anyenv init - zsh)"
 fi
