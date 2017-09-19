@@ -35,6 +35,10 @@ alias -g C='| cat'
 # nvimをvimに
 alias vim=nvim
 
+# cd
+alias ...='cd ../'
+alias ....='cd ../../'
+
 ## 補完
 # 補完を有効にする
 autoload -U compinit
@@ -45,6 +49,9 @@ setopt complete_in_word
 
 # ビープ音を鳴らさない
 setopt no_beep
+
+# ディレクトリ名だけでcdする
+setopt auto_cd
 
 ## PATH
 path=(
