@@ -2,4 +2,4 @@ all: update
 
 update:
 	git pull origin master
-	bash ./bin/hoge.sh
+	bash ./bin/setup.sh
