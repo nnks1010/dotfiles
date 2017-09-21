@@ -47,6 +47,9 @@ let g:NERDTreeQuitOnOpen=0
 
 map <C-m> :NERDTreeToggle<CR>
 
+" ------------- Seiya ------------- "
+let g:seiya_auto_enable=1
+
 " ------------- multiple cursors ------------- "
 " Default mapping
 "let g:multi_cursor_use_default_mapping=0

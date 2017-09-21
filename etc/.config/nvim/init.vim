@@ -48,9 +48,6 @@ set showmatch
 " 入力中のコマンドを表示
 set showcmd
 
-" カーソル位置の行を強調
-set cursorline
-
 "ファイル名表示
 set statusline+=%<%F
 
@@ -102,7 +99,6 @@ nnoremap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " シンタクッスハイライトを有効にする
 syntax enable
-
 set t_Co=256
 
 " カラースキーマ設定
@@ -110,5 +106,9 @@ colorscheme tender
 
 " ステータスラインを表示する
 set laststatus=2
+
+" カーソル位置の行を強調
+set cursorline
+highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
 
 " vim: set et ts=4 sw=4 sts=4 ft=vim :

@@ -23,6 +23,9 @@ repo = 'Shougo/neomru.vim'
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
+
 # [[plugins]]
 # repo = 'vim-airline/vim-airline'
 
