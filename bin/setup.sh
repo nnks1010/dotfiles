@@ -56,7 +56,7 @@ else
 fi
 rm $HOME/.ripgrep/target/release/rg
 rustup run nightly cargo build --release --features=simd-accel
-ln -sf $HOME/.ripgrep/target/release/rg /usr/local/bin/rg
+sudo ln -sf $HOME/.ripgrep/target/release/rg /usr/local/bin/rg
 cd $HOME
 
 set +x
