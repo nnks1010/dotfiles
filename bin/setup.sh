@@ -40,3 +40,23 @@ set -x
 anyenv update
 
 set +x
+
+echo "update rust"
+set -x
+
+rustup update
+if [ ! -d .ripgrep ]; then
+    echo "install ripgrep"
+    git clone https://github.com/BurntSushi/ripgrep $HOME/.ripgrep
+    cd $HOME/.ripgrep
+else
+    echo "update ripgrep"
+    cd $HOME/.ripgrep
+    git pull origin master
+fi
+rm $HOME/.ripgrep/target/release/rg
+rustup run nightly cargo build --release --features=simd-accel
+ln -sf $HOME/.ripgrep/target/release/rg /usr/local/bin/rg
+cd $HOME
+
+set +x
