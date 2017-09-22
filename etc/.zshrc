@@ -65,3 +65,9 @@ if [[ -d "$HOME/.anyenv" ]] then
 	path=($HOME/.anyenv/bin $path)
 	eval "$(anyenv init - zsh)"
 fi
+
+# cargo
+if [[ -d "$HOME/.cargo" ]] then
+    path=($HOME/.cargo/bin $path)
+    export RUSTFLAGS="-C target-cpu=native"
+fi

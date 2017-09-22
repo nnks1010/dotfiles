@@ -74,6 +74,16 @@ git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv
 
 set +x
 
+echo "install rust"
+set -x
+
+curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path
+source $HOME/.bashrc
+rustup install beta
+rustup install nightly
+
+set +x
+
 echo "init zsh"
 
 bash ./bin/init/zsh.sh
