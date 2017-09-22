@@ -56,7 +56,6 @@ setopt auto_cd
 ## PATH
 path=(
     /usr/local/Homebrew/bin(N-/)
-    /usr/local/bin(N-/)
     /usr/local/texlive/2016basic/bin/x86_64-darwin(N-/)
     $path
 )
