@@ -59,10 +59,14 @@ ln -sf $HOME/dotfiles/etc/.bashrc $HOME/.bashrc
 source $HOME/.bashrc
 anyenv install rbenv
 anyenv install pyenv
+anyenv install goenv
+anyenv install nodenv
 source $HOME/.bashrc
 rbenv install 2.4.1
 pyenv install 3.6.0
 pyenv install 2.7.13
+goenv install 1.8
+nodenv install 8.1.0
 
 set +u
 rbenv global 2.4.1
