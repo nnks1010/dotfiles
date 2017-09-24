@@ -111,4 +111,8 @@ set laststatus=2
 set cursorline
 highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
 
+" コメント時の改行の時コメントが続くのを無効化
+autocmd FileType * setlocal formatoptions-=r
+autocmd FileType * setlocal formatoptions-=o
+
 " vim: set et ts=4 sw=4 sts=4 ft=vim :
