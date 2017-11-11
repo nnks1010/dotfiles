@@ -18,7 +18,7 @@ precmd () {
 	[[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
-PROMPT="%n:%~ %1(v|(%F{green}%1v%f) |)$ "
+PROMPT="%n:%c %1(v|(%F{green}%1v%f) |)$ "
 
 ## Alias
 # ls
