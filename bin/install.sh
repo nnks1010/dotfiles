@@ -62,15 +62,15 @@ anyenv install pyenv
 anyenv install goenv
 anyenv install nodenv
 source $HOME/.bashrc
-rbenv install 2.4.1
-pyenv install 3.6.0
-pyenv install 2.7.13
-goenv install 1.8
-nodenv install 8.1.0
+rbenv install 2.4.3
+pyenv install 3.6.4
+pyenv install 2.7.14
+goenv install 1.9.2
+nodenv install 9.3.0
 
 set +u
-rbenv global 2.4.1
-pyenv global 3.6.0 2.7.13
+rbenv global 2.4.3
+pyenv global 3.6.4 2.7.14
 set -u
 
 mkdir -p $(anyenv root)/plugins

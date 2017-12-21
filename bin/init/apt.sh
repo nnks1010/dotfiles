@@ -9,6 +9,7 @@ sudo apt install libreadline-dev -y
 sudo apt install sl -y
 sudo apt install zlib1g-dev -y
 sudo apt install zsh -y
+sudo apt install mysql-server -y
 
 # install neovim
 sudo apt install software-properties-common -y
